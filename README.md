@@ -75,11 +75,37 @@ ln -s ~/.local/share/Steam/steamapps/compatdata/1659040/pfx/drive_c/users/steamu
 
 The `lastDeploy.json` file is created in this Proton prefix path after you deploy your first mod.
 
+### Step 3: Peacock Plugin Setup (If Using Mods with Plugins)
+
+If your mods include Peacock plugins, you'll need to copy them to Peacock's plugin directory. The plugin locations are listed in your `lastDeploy.json` file.
+
+**For Peacock Linux TUI (AppImage):**
+
+```bash
+# Create the plugins directory if it doesn't exist
+mkdir -p ~/.local/share/peacock-linux/Peacock/plugins/
+
+# Copy your mod plugins to the Peacock plugins directory
+cp /path/to/mod/plugins/* ~/.local/share/peacock-linux/Peacock/plugins/
+```
+
+**To find your mod plugins:**
+
+1. Open the `lastDeploy.json` file in a text editor:
+   ```bash
+   cat ~/.local/share/app.simple-mod-framework/lastDeploy.json
+   ```
+
+2. Look for the plugins section to see which plugins were deployed with your mods
+
+3. Locate the plugin files in your mod directories and copy them to `~/.local/share/peacock-linux/Peacock/plugins/`
+
 ## Important Notes
 
 - **Tilde expansion (`~`)**: The tilde character denotes your home directory and cannot be used within quotation marks. Use `~/` instead of `~` when specifying paths in quotes.
 - **Spaces in paths**: Since "Simple Mod Framework" contains spaces, be sure to escape them with backslashes (`\ `) or use quotes around the entire path.
 - **Peacock compatibility**: Peacock on Linux cannot automatically detect SMF's deployment data without the symlink workaround described above.
+- **Plugin directories**: Always ensure plugins are copied to the correct Peacock plugins directory, or they won't be loaded.
 
 ## Troubleshooting
 
@@ -89,6 +115,8 @@ If you encounter issues:
 2. Ensure Proton-GE Latest is properly installed
 3. Check that all permissions are correct on the SMF folder
 4. Review the Peacock symlink path if using Peacock integration
+5. If Peacock plugins aren't loading, verify they're in `~/.local/share/peacock-linux/Peacock/plugins/`
+6. Check `lastDeploy.json` to confirm which plugins should be present
 
 ## Resources
 
