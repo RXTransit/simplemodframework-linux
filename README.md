@@ -91,10 +91,8 @@ cp /path/to/mod/plugins/* ~/.local/share/peacock-linux/Peacock/plugins/
 
 **To find your mod plugins:**
 
-1. Open the `lastDeploy.json` file in a text editor:
-   ```bash
-   cat ~/.local/share/app.simple-mod-framework/lastDeploy.json
-   ```
+1. Open the `lastDeploy.json` file in a text editor like kate or zed or in a jsonlint parser:
+![Zed Editor](images/peacockpluginslocations.png)
 
 2. Look for the plugins section to see which plugins were deployed with your mods
 
