@@ -94,4 +94,4 @@ If you encounter issues:
 
 - [Simple Mod Framework](https://github.com/atampy25/simple-mod-framework)
 - [Proton-GE](https://github.com/GloriousEggroll/proton-ge-custom)
-- [Peacock Server](https://github.com/itsthatguy/peacock)
+- [Peacock on Linux](https://github.com/thepeacockproject/linux-steam-setup)
