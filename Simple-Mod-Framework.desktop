@@ -2,7 +2,7 @@
 Type=Application
 Name=Simple Mod Framework
 Comment=Simple Mod Framework for HITMAN 
-Exec=env STEAM_COMPAT_DATA_PATH="/home/mscott/.local/share/Steam/steamapps/compatdata/1659040" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/mscott/.local/share/Steam" "/home/mscott/.local/share/Steam/compatibilitytools.d/Proton-GE Latest/proton" run "/home/mscott/.local/share/Steam/steamapps/common/HITMAN 3/Simple Mod Framework/Mod Manager/Mod Manager.exe"
+Exec=env STEAM_COMPAT_DATA_PATH="/home/YOURUSER/.local/share/Steam/steamapps/compatdata/1659040" STEAM_COMPAT_CLIENT_INSTALL_PATH="/home/YOURUSER/.local/share/Steam" "/home/YOURUSER/.local/share/Steam/compatibilitytools.d/Proton-GE Latest/proton" run "/home/YOURUSER/.local/share/Steam/steamapps/common/HITMAN 3/Simple Mod Framework/Mod Manager/Mod Manager.exe"
 Terminal=false
 Categories=Game;
 StartupNotify=false
